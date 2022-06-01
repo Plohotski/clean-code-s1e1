@@ -18,37 +18,32 @@
     </a>
   </header>
   <main class="main">
-    <section id="add-task"><label class="label-style" for="new-task">Add Item</label>
+    <section class="add-task"><label class="label-style" for="new-task">Add Item</label>
       <div class="add-task__wrapper">
         <!-- task-style task -->
         <input class="input add-task__input" id="new-task" type="text">
-        <button class="button add-task__button">Add</button>
+        <button class="btn add-task__btn">Add</button>
       </div>
     </section>
-    <!-- todo-wrapper -->
-    <section id="todo-tasks">
-
-      <!-- texts -->
+    <section class="todo-tasks">
       <h3 class="todo-tasks__title">Todo</h3>
-
-      <!-- list-tasks -->
       <ul class="list-tasks" id="incomplete-tasks">
-        <li class="list-info">
-          <input class="task-style" type="checkbox">
-          <label class="label-style task">Pay Bills</label>
-          <input class="task-style task" type="text">
-          <button class="btn-style edit">Edit</button>
-          <button class="btn-style delete">
-            <img src="./remove.svg" alt="Remove">
+        <li class="li todo-item">
+          <input class="checkbox input todo-item__checkbox" type="checkbox">
+          <label class="label todo-item__label">Pay Bills</label>
+          <input class="input todo-item__input" type="text">
+          <button class="btn todo-item__btn-edit">Edit</button>
+          <button class="btn todo-item__btn-delete">
+            <img class="img todo-item__img" src="./remove.svg" alt="Remove">
           </button>
         </li>
-        <li class="list-info edit-mode">
-          <input class="task-style" type="checkbox">
-          <label class="label-style task">Go Shopping</label>
-          <input class="task-style task" type="text" value="Go Shopping">
-          <button class="btn-style edit">Save</button>
-          <button class="btn-style delete">
-            <img src="./remove.svg">
+        <li class="li edit-task todo-item">
+          <input class="checkbox input todo-item__checkbox" type="checkbox">
+          <label class="label todo-item__label">Go Shopping</label>
+          <input class="input todo-item__input" type="text" value="Go Shopping">
+          <button class="btn todo-item__btn-edit">Save</button>
+          <button class="btn todo-item__btn-delete">
+            <img class="img todo-item__img" src="./remove.svg">
           </button>
         </li>
       </ul>
