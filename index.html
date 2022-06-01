@@ -26,8 +26,8 @@
       </div>
     </section>
     <section class="todo-tasks">
-      <h3 class="todo-tasks__title">Todo</h3>
-      <ul class="list-tasks" id="incomplete-tasks">
+      <h3 class=" h3 todo-tasks__title">Todo</h3>
+      <ul class="ul todo-lists" id="incomplete-tasks">
         <li class="li todo-item">
           <input class="checkbox input todo-item__checkbox" type="checkbox">
           <label class="label todo-item__label">Pay Bills</label>
@@ -48,16 +48,16 @@
         </li>
       </ul>
     </section>
-    <section id="completed-wrapper">
-      <h3 class="texts">Completed</h3>
-      <ul class="list-tasks" id="completed-tasks">
-        <li class="list-info">
-          <input class="task-style" type="checkbox" checked>
-          <label class="label-style task">See the Doctor</label>
-          <input class="task-style task" type="text">
-          <button class="btn-style edit">Edit</button>
-          <button class="btn-style delete">
-            <img src="./remove.svg">
+    <section id="completed">
+      <h3 class="h3 completed__title">Completed</h3>
+      <ul class="ul todo-lists" id="completed-tasks">
+        <li class="li todo-item">
+          <input class="checkbox input todo-item__checkbox" type="checkbox" checked>
+          <label class="label todo-item__label">See the Doctor</label>
+          <input class="input todo-item__input" type="text">
+          <button class="btn todo-item__btn-edit">Edit</button>
+          <button class="btn todo-item__btn-delete">
+            <img class="img todo-item__img" src="./remove.svg">
           </button>
         </li>
       </ul>
